@@ -12,14 +12,28 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+// Финальная версия
+const gallery = document.querySelector('.gallery');
 
-const galleryList = document.querySelector('.gallery');
+const createGallery = images => {
+  const galleryItems = images.map(
+    image =>
+      `<li class="item"><img class="picture" src="${image.url}" alt="${image.alt}"></li>`,
+  );
+  gallery.insertAdjacentHTML('afterbegin', galleryItems.join(''));
+};
 
-const newTags =
-  '<li class="item"><img src="https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="White and Black Long Fur Cat" width="270" class="picture"><img></li><li class="item"><img src="https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Orange and White Koi Fish Near Yellow Koi Fish" width="270" class="picture"><img></li><li class="item"><img src="https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Group of Horses Running" width="270" class="picture"><img></li>';
+createGallery(images);
 
-galleryList.insertAdjacentHTML('beforeend', newTags);
+// Вторая версия
+// const galleryList = document.querySelector('.gallery');
 
+// const newTags =
+//   '<li class="item"><img src="https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="White and Black Long Fur Cat" width="270" class="picture"><img></li><li class="item"><img src="https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Orange and White Koi Fish Near Yellow Koi Fish" width="270" class="picture"><img></li><li class="item"><img src="https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Group of Horses Running" width="270" class="picture"><img></li>';
+
+// galleryList.insertAdjacentHTML('beforeend', newTags);
+
+// Первая версия
 // const listItem1 = document.createElement('li');
 // listItem1.classList.add('item');
 
