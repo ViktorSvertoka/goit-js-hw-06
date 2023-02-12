@@ -1,10 +1,9 @@
-//Как достучаться к свойству тега в HTML
+// Завдання 4
 
-//id - #header-btn (через решетку "хештег")
-
-//class - .header-btn (через точку)
-
-//атрибут - [type, data-action], пример [type="button"]
+// Лічильник складається зі спану і кнопок, які по кліку повинні збільшувати і зменшувати його значення на одиницю.
+// Створи змінну counterValue, в якій буде зберігатися поточне значення лічильника та ініціалізуй її значенням 0.
+// Додай слухачів кліків до кнопок, всередині яких збільшуй або зменшуй значення лічильника.
+// Оновлюй інтерфейс новим значенням змінної counterValue.
 
 const decrementBtn = document.querySelector('[data-action="decrement"]');
 const incrementBtn = document.querySelector('[data-action="increment"]');
@@ -21,3 +20,8 @@ incrementBtn.addEventListener('click', () => {
   counterValue += 1;
   value.textContent = counterValue;
 });
+
+//Как достучаться к свойству тега в HTML
+//id - #header-btn (через решетку "хештег")
+//class - .header-btn (через точку)
+//атрибут - [type, data-action], пример [type="button"]
