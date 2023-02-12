@@ -11,9 +11,7 @@
 
 const textInput = document.querySelector('#validation-input');
 
-textInput.addEventListener('blur', onInputBlur);
-
-function onInputBlur(event) {
+textInput.addEventListener('blur', event => {
   if (
     event.currentTarget.value.length ===
     Number(event.currentTarget.dataset.length)
@@ -24,7 +22,7 @@ function onInputBlur(event) {
     textInput.classList.add('invalid');
     textInput.classList.remove('valid');
   }
-}
+});
 
 // Властивість інтерфейсу dataset надає доступ
 // для читання / запису до настроюваних атрибутів даних(data -*) елементів.
