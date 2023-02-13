@@ -21,3 +21,5 @@
 - Скопіюй їх собі у проект.
 
 ![GitHub actions settings](./assets/text-1.png)
+
+![GitHub actions settings](./assets/text-2.png)
