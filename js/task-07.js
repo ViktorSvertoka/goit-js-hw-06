@@ -9,6 +9,10 @@
 const rangeInput = document.querySelector('#font-size-control');
 const onText = document.querySelector('#text');
 
-rangeInput.addEventListener('input', event => {
-  onText.style.fontSize = event.currentTarget.value + 'px';
-});
+onText.style.fontSize = rangeInput.value + 'px';
+
+const textResizing = () => {
+  onText.style.fontSize = `${rangeInput.value}px`;
+};
+
+rangeInput.addEventListener('input', textResizing);
