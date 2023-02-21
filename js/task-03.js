@@ -1,10 +1,10 @@
-// Завдання 3
+//* Завдання 3
 
-// Напиши скрипт для створення галереї зображень на підставі масиву даних. HTML містить список ul.gallery.
-// Використовуй масив об'єктів images для створення елементів <img>, вкладених в <li>.
-// Для створення розмітки використовуй шаблонні рядки і метод insertAdjacentHTML().
-// Усі елементи галереї повинні додаватися в DOM за одну операцію додавання.
-// Додай мінімальне оформлення галереї флексбоксами або грідами через CSS класи.
+//* Напиши скрипт для створення галереї зображень на підставі масиву даних. HTML містить список ul.gallery.
+//* Використовуй масив об'єктів images для створення елементів <img>, вкладених в <li>.
+//* Для створення розмітки використовуй шаблонні рядки і метод insertAdjacentHTML().
+//* Усі елементи галереї повинні додаватися в DOM за одну операцію додавання.
+//* Додай мінімальне оформлення галереї флексбоксами або грідами через CSS класи.
 
 const images = [
   {
@@ -20,7 +20,8 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-// Финальная версия
+//* Финальная версия
+
 const gallery = document.querySelector('.gallery');
 
 const createGallery = images => {
@@ -33,7 +34,7 @@ const createGallery = images => {
 
 createGallery(images);
 
-// Вторая версия
+//* Вторая версия
 // const galleryList = document.querySelector('.gallery');
 
 // const newTags =
@@ -41,7 +42,7 @@ createGallery(images);
 
 // galleryList.insertAdjacentHTML('beforeend', newTags);
 
-// Первая версия
+//* Первая версия
 // const listItem1 = document.createElement('li');
 // listItem1.classList.add('item');
 
