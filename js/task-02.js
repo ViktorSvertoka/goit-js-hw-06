@@ -1,12 +1,12 @@
-// Завдання 2
+//* Завдання 2
 
-// HTML містить порожній список ul#ingredients.
-// JavaScript містить масив рядків.
-// Напиши скрипт, який для кожного елемента масиву ingredients:
-// Створить окремий елемент <li>. Обов'язково використовуй метод document.createElement().
-// Додасть назву інгредієнта як його текстовий вміст.
-// Додасть елементу клас item.
-// Після чого, вставить усі <li> за одну операцію у список ul#ingredients.
+//* HTML містить порожній список ul#ingredients.
+//* JavaScript містить масив рядків.
+//* Напиши скрипт, який для кожного елемента масиву ingredients:
+//* Створить окремий елемент <li>. Обов'язково використовуй метод document.createElement().
+//* Додасть назву інгредієнта як його текстовий вміст.
+//* Додасть елементу клас item.
+//* Після чого, вставить усі <li> за одну операцію у список ul#ingredients.
 
 const ingredients = [
   'Potatoes',
@@ -31,7 +31,7 @@ console.log(items);
 
 ingredientsList.append(...items);
 
-// Добавление по одному элементу
+//* Добавление по одному элементу
 
 // const listItem1 = document.createElement('li');
 // listItem1.classList.add('item');
@@ -57,7 +57,7 @@ ingredientsList.append(...items);
 // listItem6.classList.add('item');
 // listItem6.textContent = 'Condiments';
 
-// Загрузка по одному элементу
+//* Загрузка по одному элементу
 
 // listEl.insertBefore(listItem1, listEl.children[0]);
 // listEl.insertBefore(listItem2, listEl.children[1]);
@@ -66,7 +66,7 @@ ingredientsList.append(...items);
 // listEl.insertBefore(listItem5, listEl.children[4]);
 // listEl.insertBefore(listItem6, listEl.children[5]);
 
-// Общая загрузка
+//* Общая загрузка
 
 // const listEl = document.querySelector('#ingredients');
 // listEl.prepend(
