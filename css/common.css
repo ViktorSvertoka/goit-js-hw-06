@@ -38,6 +38,14 @@ button {
   height: 300px;
 }
 
+.picture:hover {
+ 
+  box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.16), 6px 8px 10px rgba(0, 0, 0, 0.16),
+  6px 8px 10px rgba(0, 0, 0, 0.16), 6px 8px 10px rgba(0, 0, 0, 0.16);
+      transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 ul {
   list-style: none;
 }
