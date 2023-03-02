@@ -8,7 +8,7 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: white;
   color: #212121;
   line-height: 1.5;
   background: url(../assets/js.jpg) center / cover no-repeat;
@@ -39,10 +39,9 @@ button {
 }
 
 .picture:hover {
- 
   box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.16), 6px 8px 10px rgba(0, 0, 0, 0.16),
-      6px 8px 10px rgba(0, 0, 0, 0.16), 6px 8px 10px rgba(0, 0, 0, 0.16);
-      transition: transform 250ms;
+    6px 8px 10px rgba(0, 0, 0, 0.16), 6px 8px 10px rgba(0, 0, 0, 0.16);
+  transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
